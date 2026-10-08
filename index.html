@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tax Land More, Tax Homes Less</title>
+<meta name="description" content="The electronic version of the Progress and Poverty Institute's Philadelphia land value tax briefing, with every source linked.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800&family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme: light;
+  --page:#F8F8F8; --panel:#D9D9D9; --card:#FFFFFF; --ink:#111111; --muted:#54595F; --rule:#111111;
+  --hair:#C9C9C9; --accent:#D85B0D; --less:#1A8E86; --more:#B0301A; --more-bar:#D8432F;
+  --link:#0F6F68; --axis:#747474; --band:#D9D9D9; --band-ink:#111111;
+  --display:'League Spartan','Arial Black',Arial,sans-serif;
+  --text:'Lato','Helvetica Neue',Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --page:#161616; --panel:#262625; --card:#1E1E1D; --ink:#EDEDEB; --muted:#A9ADB1; --rule:#EDEDEB;
+    --hair:#3A3A38; --accent:#F07A2E; --less:#3FBDB3; --more:#F0735E; --more-bar:#E5583F;
+    --link:#5FD0C6; --axis:#8A8A8A;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --page:#161616; --panel:#262625; --card:#1E1E1D; --ink:#EDEDEB; --muted:#A9ADB1; --rule:#EDEDEB;
+  --hair:#3A3A38; --accent:#F07A2E; --less:#3FBDB3; --more:#F0735E; --more-bar:#E5583F;
+  --link:#5FD0C6; --axis:#8A8A8A;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--ink);font-family:var(--text);font-size:17px;line-height:1.55}
+a{color:var(--link);text-underline-offset:2px}
+a:hover{color:var(--ink)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1040px;margin:0 auto;padding-inline:24px}
+@media (max-width:560px){.wrap{padding-inline:16px}}
+h1,h2,h3{font-family:var(--display);font-weight:800;text-transform:uppercase;letter-spacing:-.005em;text-wrap:balance;margin:0}
+h2{font-size:28px;line-height:1.1}
+h3{font-size:18px;line-height:1.2}
+p{margin:0}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.note{font-size:14px;line-height:1.5;color:var(--muted)}
+.num{font-variant-numeric:tabular-nums}
+sup.ref{font-size:11px;line-height:0;font-weight:700;margin-left:1px}
+sup.ref a{text-decoration:none;padding:0 1px}
+
+/* header band: the flyer's grey, the same in both themes */
+.band{background:var(--band);color:var(--band-ink);padding-block:28px 32px}
+.band a{color:#0F6F68}
+.band-grid{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:28px;align-items:stretch}
+.band-main{display:flex;flex-direction:column;gap:14px}
+.brand{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.brand img{width:170px;height:auto;display:block}
+.brand .eyebrow{color:#B04A08}
+h1{font-size:clamp(40px,7vw,64px);line-height:.98;color:#111111}
+h1 span{display:block}
+h1 .hot{color:#D85B0D}
+.dek{font-size:19px;line-height:1.4;font-weight:700;max-width:34em}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:4px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;font-weight:700;font-size:15px;text-decoration:none;border:2px solid #111111;color:#111111}
+.band .btn{color:#111111}
+.btn.primary{background:#111111;color:#FFFFFF}
+.band .btn.primary{color:#FFFFFF}
+.btn:hover{background:#D85B0D;border-color:#D85B0D;color:#FFFFFF}
+.band .btn:hover{color:#FFFFFF}
+.stat{background:#F8F8F8;padding:18px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px;color:#111111}
+.stat .big{font-weight:900;font-size:60px;line-height:1;letter-spacing:-.02em;color:#D85B0D}
+.stat .lbl{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:18px;line-height:1.15}
+@media (max-width:760px){.band-grid{grid-template-columns:1fr}}
+
+nav.toc{border-bottom:1px solid var(--hair);background:var(--page)}
+nav.toc ul{list-style:none;margin:0;padding:12px 0;display:flex;flex-wrap:wrap;gap:6px 18px;font-size:14px;font-weight:700}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:2px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+
+main{display:flex;flex-direction:column;gap:56px;padding-block:40px 64px}
+section{display:flex;flex-direction:column;gap:18px;scroll-margin-top:16px}
+section>h2{border-top:4px solid var(--accent);padding-top:12px}
+.prose{max-width:44em;display:flex;flex-direction:column;gap:14px}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:start}
+@media (max-width:760px){.two{grid-template-columns:1fr}}
+
+.panel{background:var(--panel);padding:18px 20px;display:flex;flex-direction:column;gap:10px}
+.panel h3{font-size:16px}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+th,td{padding:6px 8px;text-align:right;vertical-align:baseline}
+th:first-child,td:first-child{text-align:left;padding-left:0}
+thead th{font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--muted)}
+tbody td:first-child{font-weight:700}
+td.less{color:var(--less);font-weight:700}
+td.more{color:var(--more);font-weight:700}
+.scroll{overflow-x:auto}
+
+.rates{display:grid;grid-template-columns:80px minmax(0,1fr) minmax(0,1fr);gap:8px 12px;align-items:center;font-variant-numeric:tabular-nums}
+.rates .h{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.rates .k{font-weight:700;font-size:15px}
+.rbar{display:flex;align-items:center;gap:8px;font-weight:700}
+.rbar i{display:block;height:18px}
+.rbar .land{background:var(--accent)}
+.rbar .bldg{background:var(--less)}
+
+.callout{font-weight:700;font-size:18px;line-height:1.4}
+.kicker{display:flex;gap:28px;flex-wrap:wrap}
+.kicker div{display:flex;flex-direction:column}
+.kicker b{font-weight:900;font-size:34px;line-height:1.1;color:var(--accent)}
+.kicker span{font-size:15px}
+
+.charts{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px}
+@media (max-width:760px){.charts{grid-template-columns:1fr}}
+figure.chart{margin:0;display:flex;flex-direction:column;gap:4px}
+figure.chart figcaption{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:4px}
+.bar-row,.bar-head{display:grid;grid-template-columns:118px minmax(0,1fr) 54px 54px;gap:8px;align-items:center}
+.bar-head{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.bar-head span:nth-child(n+3){text-align:right}
+.bar-label{font-size:14px;font-weight:700}
+.bar-track{position:relative;height:28px}
+.bar-track::before{content:"";position:absolute;left:50%;top:0;bottom:0;border-left:1px solid var(--axis)}
+.bar{position:absolute;height:11px;top:3px}
+.bar.fhfa{top:15px;height:9px;opacity:.45}
+.bar.left{right:50%}
+.bar.right{left:50%}
+.bar.less{background:var(--less)}
+.bar.more{background:var(--more-bar)}
+.bar-val{text-align:right;font-size:14px;font-weight:700;font-variant-numeric:tabular-nums}
+.bar-val.less{color:var(--less)}
+.bar-val.more{color:var(--more)}
+.bar-val.fhfa-val{color:var(--muted);font-weight:400}
+@media (max-width:420px){.bar-row,.bar-head{grid-template-columns:92px minmax(0,1fr) 46px 46px}.bar-label{font-size:13px}}
+
+.map{display:grid;grid-template-columns:180px minmax(0,1fr);gap:24px;align-items:start}
+.map img{width:100%;height:auto;display:block;background:#F8F8F8}
+@media (max-width:560px){.map{grid-template-columns:1fr}.map img{max-width:200px}}
+
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+@media (max-width:820px){.steps{grid-template-columns:1fr}}
+.step{background:var(--card);border-top:4px solid var(--ink);padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px}
+.step.last{border-top-color:var(--accent)}
+.step .top{display:flex;gap:10px;align-items:center}
+.step .n{width:28px;height:28px;border-radius:14px;background:var(--ink);color:var(--page);font-weight:800;display:grid;place-items:center;flex-shrink:0}
+.step.last .n{background:var(--accent);color:#FFFFFF}
+.step .when{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.step h3{text-transform:none;font-family:var(--text);font-weight:900;font-size:19px;letter-spacing:0}
+.step p{font-size:16px}
+.pre{background:var(--panel);border-top:4px solid var(--accent);padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px}
+.pre .when{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.pre h3{text-transform:none;font-family:var(--text);font-weight:900;font-size:19px;letter-spacing:0}
+
+.studies{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+@media (max-width:560px){.studies{grid-template-columns:1fr}}
+.study{border-top:3px solid var(--accent);padding-top:8px;display:flex;flex-direction:column;gap:4px}
+.study b{font-weight:900;font-size:36px;line-height:1.1;color:var(--accent)}
+
+.george{display:grid;grid-template-columns:200px minmax(0,1fr);gap:28px;align-items:start}
+.george img{width:100%;height:auto;display:block;border:3px solid var(--accent)}
+@media (max-width:560px){.george{grid-template-columns:1fr}.george img{max-width:220px}}
+blockquote{margin:0;padding-left:16px;border-left:4px solid var(--accent);font-style:italic}
+
+.backers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 28px}
+@media (max-width:640px){.backers{grid-template-columns:1fr}}
+.backer{border-top:3px solid var(--ink);padding-top:8px;display:flex;flex-direction:column;gap:4px}
+.backer h3{text-transform:none;font-family:var(--text);font-weight:900;font-size:17px;letter-spacing:0}
+
+.method dl{margin:0;display:grid;grid-template-columns:minmax(0,1fr);gap:16px;max-width:44em}
+.method dt{font-weight:900}
+.method dd{margin:2px 0 0}
+.method code{font-size:.9em}
+.formula{font-family:Georgia,'Times New Roman',serif;font-size:17px;padding:10px 14px;background:var(--panel);display:inline-block}
+.links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+@media (max-width:760px){.links{grid-template-columns:1fr}}
+.linkcard{display:flex;flex-direction:column;gap:6px;padding:16px;background:var(--card);border:1px solid var(--hair);text-decoration:none;color:var(--ink)}
+.linkcard b{color:var(--link)}
+.linkcard:hover{border-color:var(--accent)}
+.linkcard:hover b{color:var(--accent)}
+
+.flyer{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+@media (max-width:560px){.flyer{grid-template-columns:1fr}}
+.flyer a{display:block;border:1px solid var(--hair)}
+.flyer img{width:100%;height:auto;display:block}
+
+ol.sources{margin:0;padding-left:28px;display:flex;flex-direction:column;gap:8px;font-size:15px;max-width:52em}
+ol.sources li:target{background:var(--panel);outline:6px solid var(--panel)}
+ol.sources a{overflow-wrap:anywhere}
+
+footer{border-top:1px solid var(--rule);padding-block:20px 40px;font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:space-between}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+</head>
+<body>
+
+<header class="band">
+  <div class="wrap band-grid">
+    <div class="band-main">
+      <div class="brand">
+        <img src="img/ppi-logo.png" alt="Progress and Poverty Institute" width="170" height="35">
+        <span class="eyebrow">A Philadelphia policy briefing</span>
+      </div>
+      <h1><span>Tax land more.</span><span class="hot">Tax homes less.</span></h1>
+      <p class="dek">Same revenue. Lower rate on buildings, higher on land. This is the electronic version of the printed briefing, with a source linked beside every claim.</p>
+      <div class="actions">
+        <a class="btn primary" href="philadelphia-land-value-tax-briefing.pdf">Printed briefing (PDF)</a>
+        <a class="btn" href="#method">How the numbers are made</a>
+        <a class="btn" href="#sources">All sources</a>
+      </div>
+    </div>
+    <aside class="stat">
+      <div class="big num">2 in 3</div>
+      <div class="lbl">Philadelphia homes pay less</div>
+      <p>The median home saves <strong>$191 a year</strong> on a typical bill of $2,531.<sup class="ref"><a href="#src-1" id="ref-numbers-1">1</a></sup></p>
+    </aside>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Sections">
+  <div class="wrap">
+    <ul>
+      <li><a href="#two-rates">Two rates</a></li>
+      <li><a href="#neighborhoods">Neighborhoods</a></li>
+      <li><a href="#idle-land">Idle land</a></li>
+      <li><a href="#getting-there">Getting there</a></li>
+      <li><a href="#pennsylvania">Pennsylvania</a></li>
+      <li><a href="#abatement">The abatement</a></li>
+      <li><a href="#backers">Who backs it</a></li>
+      <li><a href="#method">Method</a></li>
+      <li><a href="#flyer">Printed version</a></li>
+      <li><a href="#sources">Sources</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<section id="two-rates">
+  <h2>One property tax, two rates</h2>
+  <div class="two">
+    <div class="prose">
+      <p>Today one rate, 1.3998% for the City and School District together, covers land and buildings alike. It has not changed since 2016.<sup class="ref"><a href="#src-2" id="ref-rate-2">2</a>,<a href="#src-3" id="ref-rate2026-3">3</a></sup> A land value tax splits it: land is taxed at 4 times the building rate, and the two rates are set so the City and School District collect exactly what they collect today, $2.42 billion a year.<sup class="ref"><a href="#src-1" id="ref-numbers-1">1</a></sup></p>
+      <div class="rates" role="table" aria-label="Tax rates today and under a land value tax">
+        <span class="h" role="columnheader"></span><span class="h" role="columnheader">Today</span><span class="h" role="columnheader">Land value tax</span>
+        <span class="k" role="rowheader">Land</span>
+        <span class="rbar"><i class="land" style="width:36px"></i>1.40%</span>
+        <span class="rbar"><i class="land" style="width:76px"></i>2.95%</span>
+        <span class="k" role="rowheader">Buildings</span>
+        <span class="rbar"><i class="bldg" style="width:36px"></i>1.40%</span>
+        <span class="rbar"><i class="bldg" style="width:19px"></i>0.74%</span>
+      </div>
+      <p>Assessments stay the same. What changes is how each property's assessed value is split between land and building, and the rate each part pays. Fixing up a home is taxed at half today's rate.</p>
+    </div>
+    <div class="panel">
+      <h3>A rowhouse, and the empty lot next door</h3>
+      <div class="scroll">
+        <table>
+          <thead><tr><th scope="col">Yearly tax bill</th><th scope="col">Today</th><th scope="col">After</th><th scope="col">Change</th></tr></thead>
+          <tbody>
+            <tr><td>Owner's rowhouse</td><td>$1,868</td><td>$1,712</td><td class="less">−$156</td></tr>
+            <tr><td>Same house, rented</td><td>$3,268</td><td>$2,995</td><td class="less">−$273</td></tr>
+            <tr><td>Empty lot, same land</td><td>$804</td><td>$1,695</td><td class="more">+$892</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">The typical home: $57,000 of land and $176,000 of building (25% land), the medians of 210,208 single-family homes with a Homestead Exemption.<sup class="ref"><a href="#src-1" id="ref-numbers-1">1</a>,<a href="#src-4" id="ref-opa-4">4</a></sup> The owner's rowhouse takes the $100,000 Homestead Exemption; the rented one doesn't.<sup class="ref"><a href="#src-5" id="ref-homestead-5">5</a></sup> Both houses save 8%.</p>
+      <p class="callout">The rule of thumb: a property pays less when its land is under about 30% of its value.</p>
+    </div>
+  </div>
+</section>
+
+<section id="neighborhoods">
+  <h2>The biggest cuts go to poorer and more diverse neighborhoods</h2>
+  <div class="charts">
+    <figure class="chart"><figcaption>By median household income</figcaption><div class="bar-head"><span></span><span></span><span>Model</span><span>FHFA</span></div><div class="bar-row"><span class="bar-label">Poorest fifth</span><span class="bar-track"><span class="bar left less" style="width:26.3%"></span><span class="bar left fhfa less" style="width:21.1%"></span></span><span class="bar-val less">−10%</span><span class="bar-val fhfa-val">−8%</span></div><div class="bar-row"><span class="bar-label">Second</span><span class="bar-track"><span class="bar left less" style="width:15.1%"></span><span class="bar left fhfa less" style="width:18.0%"></span></span><span class="bar-val less">−6%</span><span class="bar-val fhfa-val">−7%</span></div><div class="bar-row"><span class="bar-label">Middle</span><span class="bar-track"><span class="bar left less" style="width:8.4%"></span><span class="bar left fhfa less" style="width:16.2%"></span></span><span class="bar-val less">−3%</span><span class="bar-val fhfa-val">−6%</span></div><div class="bar-row"><span class="bar-label">Fourth</span><span class="bar-track"><span class="bar left less" style="width:4.6%"></span><span class="bar left fhfa less" style="width:9.0%"></span></span><span class="bar-val less">−2%</span><span class="bar-val fhfa-val">−4%</span></div><div class="bar-row"><span class="bar-label">Richest fifth</span><span class="bar-track"><span class="bar right more" style="width:10.3%"></span><span class="bar left fhfa less" style="width:0.5%"></span></span><span class="bar-val more">+4%</span><span class="bar-val fhfa-val">−0.2%</span></div></figure>
+<figure class="chart"><figcaption>By non-white share of residents</figcaption><div class="bar-head"><span></span><span></span><span>Model</span><span>FHFA</span></div><div class="bar-row"><span class="bar-label">Most non-white</span><span class="bar-track"><span class="bar left less" style="width:50.0%"></span><span class="bar left fhfa less" style="width:30.8%"></span></span><span class="bar-val less">−20%</span><span class="bar-val fhfa-val">−12%</span></div><div class="bar-row"><span class="bar-label">Fourth</span><span class="bar-track"><span class="bar left less" style="width:27.7%"></span><span class="bar left fhfa less" style="width:24.6%"></span></span><span class="bar-val less">−11%</span><span class="bar-val fhfa-val">−10%</span></div><div class="bar-row"><span class="bar-label">Middle</span><span class="bar-track"><span class="bar right more" style="width:2.5%"></span><span class="bar left fhfa less" style="width:12.5%"></span></span><span class="bar-val more">+1%</span><span class="bar-val fhfa-val">−5%</span></div><div class="bar-row"><span class="bar-label">Second</span><span class="bar-track"><span class="bar right more" style="width:0.7%"></span><span class="bar left fhfa less" style="width:7.6%"></span></span><span class="bar-val more">+0.3%</span><span class="bar-val fhfa-val">−3%</span></div><div class="bar-row"><span class="bar-label">Whitest fifth</span><span class="bar-track"><span class="bar right more" style="width:7.0%"></span><span class="bar left fhfa less" style="width:1.2%"></span></span><span class="bar-val more">+3%</span><span class="bar-val fhfa-val">−0.5%</span></div></figure>
+  </div>
+  <div class="kicker">
+    <div><b>8 in 10</b><span>homes pay less in the poorest fifth</span></div>
+    <div><b>8 in 10</b><span>or more in the most non-white fifth</span></div>
+  </div>
+  <div class="prose">
+    <p class="note">Change in homes' total tax bill, by fifths of Philadelphia neighborhoods (census block groups, cut so each fifth holds a fifth of the city's homes). Neighborhood income and race come from the Census Bureau's American Community Survey.<sup class="ref"><a href="#src-6" id="ref-acs-6">6</a></sup> The poorest fifth are block groups with a median household income under $39,767, the richest over $97,031; the whitest fifth are under 28% non-white, the most non-white over 97%. These are neighborhood averages, not households. Both charts share one scale.</p>
+    <p class="note"><strong>The FHFA column</strong> reruns the model with an independent federal estimate of land values: the Federal Housing Finance Agency's land share for each census tract, applied to the single-family homes it covers (94% of them).<sup class="ref"><a href="#src-7" id="ref-fhfa-7">7</a></sup> It points the same way. The gap between the poorest and richest fifths is a little over half as wide as in the main model. On OPA's current land values, the pattern reverses: the biggest cuts go to richer, whiter neighborhoods.<sup class="ref"><a href="#src-1" id="ref-numbers-1">1</a></sup></p>
+  </div>
+</section>
+
+<section id="idle-land">
+  <h2>Idle land pays more</h2>
+  <div class="map">
+    <img src="img/idle-land-map.png" alt="Outline of Philadelphia with a square 1.5 miles on a side at its center. The square is the combined area of every taxable vacant lot and surface parking lot in the city." width="180" height="201">
+    <div class="prose">
+      <p><strong>1,470 taxable acres</strong> sit vacant or paved for parking: 21,733 taxable vacant lots and surface parking lots (1,145 acres of vacant land and 326 of parking) that together would fill a square 1.5 miles on a side.<sup class="ref"><a href="#src-8" id="ref-lni_vacant-8">8</a>,<a href="#src-4" id="ref-opa-4">4</a></sup> A typical such lot would see its tax bill double, so it starts to pay to build, or to sell to someone who will.<sup class="ref"><a href="#src-1" id="ref-numbers-1">1</a></sup></p>
+      <p>Building-heavy property pays less and land-heavy property pays more: 66% of homes and about half of apartment buildings pay less, while most commercial properties pay more, nearly 9 in 10 warehouses and gas stations among them.<sup class="ref"><a href="#src-1" id="ref-numbers-1">1</a></sup></p>
+      <p><strong>Some homeowners pay more too.</strong> Of homes with a Homestead Exemption, 64% pay less (median saving $291) and 36% pay more (median $515), mostly where land is a big share of value. The Longtime Owner Occupants Program<sup class="ref"><a href="#src-9" id="ref-loop-9">9</a></sup> and the Senior Citizen Tax Freeze<sup class="ref"><a href="#src-10" id="ref-freeze-10">10</a></sup> continue.</p>
+    </div>
+  </div>
+</section>
+
+<section id="getting-there">
+  <h2>How Philadelphia gets there</h2>
+  <div class="pre">
+    <span class="when">Before a vote</span>
+    <h3>Build public understanding</h3>
+    <p>Poll Philadelphians and test how best to explain the shift. Give every owner a way to look up their own property. Publish accurate land values years before any rate changes, so owners see their land and building figures move while their bills don't. Land taxes have been lost this way before. Pittsburgh repealed its split rate in the backlash to a 2001 reassessment,<sup class="ref"><a href="#src-11" id="ref-governing-11">11</a></sup> and Altoona's council dropped its land tax in 2016 partly because it “caused confusion.”<sup class="ref"><a href="#src-12" id="ref-altoona-12">12</a></sup></p>
+  </div>
+  <ol class="steps" style="list-style:none;margin:0;padding:0">
+    <li class="step">
+      <div class="top"><span class="n">1</span><span class="when">City Council, now</span></div>
+      <h3>Fix land assessments</h3>
+      <p>Require the Office of Property Assessment to value land accurately, tested against sales; this page's figures use a first version of such values. No state permission is needed, and every figure on this page depends on it.</p>
+    </li>
+    <li class="step">
+      <div class="top"><span class="n">2</span><span class="when">State, in parallel</span></div>
+      <h3>Pass enabling legislation</h3>
+      <p>State law lets third-class cities and boroughs tax land above buildings, but not Philadelphia.<sup class="ref"><a href="#src-13" id="ref-third_class-13">13</a>,<a href="#src-14" id="ref-borough-14">14</a></sup> The bill must also fit the Homestead Exemption and other long-running relief to two rates: under today's homestead rule, which takes it off the building first, 65% of exempt homeowners would pay more; with the fix, 36%.<sup class="ref"><a href="#src-15" id="ref-s8583-15">15</a>,<a href="#src-1" id="ref-numbers-1">1</a></sup></p>
+    </li>
+    <li class="step last">
+      <div class="top"><span class="n">3</span><span class="when">City Council, then</span></div>
+      <h3>Pass the land value tax</h3>
+      <p>Shift the rate from buildings to land, revenue-neutral, phased in over 10 years, once land is valued accurately and the city has clear state authority.</p>
+    </li>
+  </ol>
+</section>
+
+<section id="pennsylvania">
+  <h2>Pennsylvania has done this for a century</h2>
+  <div class="two">
+    <div class="prose">
+      <p>About 20 Pennsylvania municipalities have taxed land above buildings.<sup class="ref"><a href="#src-16" id="ref-pa_history-16">16</a>,<a href="#src-17" id="ref-yang_hawley-17">17</a></sup> Harrisburg (since 1975) and Allentown (since 1997) are among those that still do.<sup class="ref"><a href="#src-17" id="ref-yang_hawley-17">17</a>,<a href="#src-18" id="ref-harrisburg-18">18</a>,<a href="#src-19" id="ref-allentown-19">19</a></sup> Published studies of those cities found:</p>
+    </div>
+    <div class="studies">
+      <div class="study"><b>+14%</b><span>new homes a month in Pittsburgh from a 5% cut in its building tax rate, the effect Bourassa found; raising the land tax had no significant effect on its own.<sup class="ref"><a href="#src-20" id="ref-bourassa-20">20</a></sup></span></div>
+      <div class="study"><b>6–8 points</b><span>faster growth in housing units per square mile over a decade in towns with two rates: denser, less sprawl.<sup class="ref"><a href="#src-21" id="ref-yang-21">21</a></sup></span></div>
+    </div>
+  </div>
+</section>
+
+<section id="abatement">
+  <h2>The 10-year abatement is honored</h2>
+  <div class="prose">
+    <p>Philadelphia's 10-year abatements take new construction and improvements off the tax bill for a decade.<sup class="ref"><a href="#src-22" id="ref-abatement-22">22</a></sup> Under this plan no abatement ends early. While one runs, its owner pays more on the land. Of the 20,233 abated properties, 32% never pay more overall; 50% pay more for a time and are made whole after the abatement ends; 18% pay more for good. Once it ends, 81% pay less than under today's tax, a median $1,044 a year. The last abatement expires in 2036.<sup class="ref"><a href="#src-1" id="ref-numbers-1">1</a></sup></p>
+    <p class="note">This is the same reform phased in over 10 years from tax year 2027, with every abatement running out on its own schedule.</p>
+  </div>
+</section>
+
+<section id="george">
+  <h2>A Philadelphia idea</h2>
+  <div class="george">
+    <img src="img/henry-george-marker.jpg" alt="Pennsylvania state historical marker for Henry George. It says he urged taxing socially produced land values instead of individually produced labor and capital." width="200" height="238">
+    <div class="prose">
+      <p class="callout">Land gets its value from all of us: the transit, schools, jobs and neighbors around it. A building gets its value from the people who build it and keep it up.</p>
+      <p>Henry George, who made that case, was born at 413 S. 10th St. in 1839. The state marker outside reads:<sup class="ref"><a href="#src-23" id="ref-marker-23">23</a></sup></p>
+      <blockquote>Tax socially produced land values, he urged, instead of individually produced labor and capital.</blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="backers">
+  <h2>Who else backs it</h2>
+  <div class="backers">
+    <div class="backer"><h3>Pittsburgh Post-Gazette editorial board</h3><p>“Pittsburgh should return to its roots in land value taxation,” in the headline of a December 2025 editorial.<sup class="ref"><a href="#src-24" id="ref-postgazette-24">24</a></sup></p></div>
+    <div class="backer"><h3>Joe Gyourko, Wharton</h3><p>“We should tax land much more than structure,” with a careful, lengthy phase-in. Brookings, 2026.<sup class="ref"><a href="#src-25" id="ref-gyourko-25">25</a></sup></p></div>
+    <div class="backer"><h3>ATU Local 689, Metro DC's transit union</h3><p>Proposed a land value tax around Metro stations to fund transit, in a 2025 report.<sup class="ref"><a href="#src-26" id="ref-atu689-26">26</a></sup></p></div>
+    <div class="backer"><h3>Chicago DSA</h3><p>A plank of its platform: “Protecting Homeowners by Taxing Land, Not Property.”<sup class="ref"><a href="#src-27" id="ref-chicagodsa-27">27</a></sup></p></div>
+  </div>
+</section>
+
+<section id="method" class="method">
+  <h2>How the numbers are made</h2>
+  <div class="prose">
+    <p>Every figure on this page is a modeled estimate for tax year 2026, not a tax bill. They come from PPI's Philadelphia model, built on LVTShift, an open-source toolkit that recomputes the bill for every taxable parcel in the city.<sup class="ref"><a href="#src-28" id="ref-lvtshift-28">28</a></sup> Every figure on this page is published with it as data.<sup class="ref"><a href="#src-1" id="ref-numbers-1">1</a></sup></p>
+  </div>
+  <dl>
+    <div><dt>The records</dt><dd>The Office of Property Assessment's tax year 2026 roll: one row per parcel, with its taxable land and building, property type, lot size and Homestead Exemption.<sup class="ref"><a href="#src-4" id="ref-opa-4">4</a></sup> "Homes" are taxable 1–4-unit residential parcels with a tax bill today (482,976 of them). Owner-occupied homes, those with a Homestead Exemption or an individual owner whose mailing address is the home, pay less about as often as homes overall (65% of them), but as a group they pay about the same as today (+0.6%): the increases on land-heavy homes offset the majority's savings.<sup class="ref"><a href="#src-1" id="ref-numbers-1">1</a></sup></dd></div>
+    <div><dt>Land values from land sales</dt><dd>OPA's land values sit close to a fixed share of each property's value. The model replaces them with PPI's own estimates from 3,877 Philadelphia land sales since 2020: lots sold vacant, whether still empty or built on since, and teardowns. Each lot takes the weighted median price per square foot of its ten nearest such sales, each adjusted to the lot's size and to the valuation date; the size adjustment is measured from pairs of nearby sales. On lots larger than 10,000 square feet, which few land sales test, the estimate runs high, so it is scaled down by how far it overshoots the sales of such lots, by lot size. Bare tracts with a restricted use, such as rail corridors and port terminals, keep OPA's value (see the largest lots, below).<sup class="ref"><a href="#src-1" id="ref-numbers-1">1</a></sup></dd></div>
+    <div><dt>Assessments stay put</dt><dd>For a parcel with a building, land becomes the sales-based estimate (capped at the parcel's total) and the building is the rest. The total assessment does not move, so nobody's assessment goes up; 100% of the 515,731 built parcels keep exactly today's total. Bare lots, having no building to hold a total against, are valued at their land estimate (30,583 of them).</dd></div>
+    <div><dt>Revenue-neutral rates</dt><dd>With land taxed at 4 times the building rate, the building rate is the one that raises today's revenue:<br><span class="formula">building rate = revenue ÷ (4 × taxable land + taxable building)</span><br>and the land rate is 4 times that: 2.95% and 0.74%.</dd></div>
+    <div><dt>Other long-running relief</dt><dd>Some properties carry other relief that OPA records as an exemption. It has run since 2015 or earlier and rises with each reassessment, so it is not a construction abatement, and OPA's data does not name its program. How it should divide between land and building under two rates is not set by law. These figures keep it and take it off land and building in proportion to value, like the homestead.<sup class="ref"><a href="#src-1" id="ref-numbers-1">1</a></sup></dd></div>
+    <div><dt>The Homestead Exemption</dt><dd>At one rate it does not matter which part of a home the $100,000 exemption comes off. Under two rates it does. State law takes it off the building first,<sup class="ref"><a href="#src-15" id="ref-s8583-15">15</a></sup> which would cut the median homeowner's exemption from $1,400 a year to $699, about half. This page's figures take it off land and building in proportion to their value, which keeps most of its worth ($1,248) and needs § 8583(c) amended.<sup class="ref"><a href="#src-1" id="ref-numbers-1">1</a></sup></dd></div>
+    <div><dt>After today's abatements</dt><dd>The figures describe the city after today's 10-year abatements have run out, with each abated building back on the roll. The transition while they run is modeled year by year in the abatement section.</dd></div>
+    <div><dt>The largest lots</dt><dd>The land sales are mostly small lots, so for lots larger than 10,000 square feet the estimate is an extrapolation, and on the sales of such lots that exist it runs high: about 1.09 times the price up to an acre and 1.83 times above. The figures here divide it by that. In these figures homes' total saving is $34 million a year, and it goes to homes that are not owner-occupied, mostly rented: they save $40 million (6.5%). Owner-occupied homes as a group pay about the same as today (+0.6%), though 65% of them pay less. Other defensible readings of the largest lots move homes' total saving from $30 million to $68 million. The share of homes paying less barely moves. The table varies only the 1,653 bare lots larger than 10,000 square feet.</dd></div>
+  </dl>
+  <div class="scroll">
+    <table style="max-width:720px">
+      <thead><tr><th scope="col">Largest bare lots valued at</th><th scope="col">Land rate</th><th scope="col">Building rate</th><th scope="col">Homes, all together</th><th scope="col">Vacant land</th></tr></thead>
+      <tbody>
+        <tr><td>The sales-based estimate, scaled to the sales (the headline)</td><td>2.95%</td><td>0.74%</td><td class="less">−$34 million</td><td class="more">+141%</td></tr>
+        <tr><td>OPA's value</td><td>2.97%</td><td>0.74%</td><td class="less">−$23 million</td><td class="more">+117%</td></tr>
+        <tr><td>OPA's value, re-leveled to sales</td><td>2.96%</td><td>0.74%</td><td class="less">−$31 million</td><td class="more">+139%</td></tr>
+        <tr><td>The sales-based estimate, unscaled</td><td>2.89%</td><td>0.72%</td><td class="less">−$69 million</td><td class="more">+233%</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="links">
+    <a class="linkcard" href="https://github.com/drussellmrichie/LVTShift"><b>The engine</b><span>LVTShift, the open-source toolkit PPI's model is built on, open to anyone to read and run.</span></a>
+    <a class="linkcard" href="numbers.json"><b>The figures as data</b><span>The file every number here is formatted from, as of 2026-10-01.</span></a>
+  </div>
+</section>
+
+<section id="flyer">
+  <h2>The printed briefing</h2>
+  <p>Two pages, letter size. <a href="philadelphia-land-value-tax-briefing.pdf">Download the PDF</a>.</p>
+  <div class="flyer">
+    <a href="philadelphia-land-value-tax-briefing.pdf"><img src="flyer-front.jpg" alt="Front page of the printed briefing" width="612" height="792"></a>
+    <a href="philadelphia-land-value-tax-briefing.pdf"><img src="flyer-back.jpg" alt="Back page of the printed briefing" width="612" height="792"></a>
+  </div>
+</section>
+
+<section id="sources">
+  <h2>Sources</h2>
+  <ol class="sources">
+<li id="src-1">PPI&#x27;s Philadelphia model: every figure on this page, as data (numbers.json). <a href="numbers.json">numbers.json</a></li>
+<li id="src-2">City of Philadelphia, Real Estate Tax. <a href="https://www.phila.gov/services/payments-assistance-taxes/taxes/property-and-real-estate-taxes/real-estate-tax/">phila.gov/services/payments-assistance-taxes/taxes/proper…</a></li>
+<li id="src-3">City of Philadelphia, Learn how to lower your property tax bill ahead of the 2027 valuations, July 20, 2026: the rate has not changed since 2016. <a href="https://www.phila.gov/2026-07-20-learn-how-to-lower-your-property-tax-bill-ahead-of-the-2027-valuations/">phila.gov/2026-07-20-learn-how-to-lower-your-property-tax…</a></li>
+<li id="src-4">City of Philadelphia, Office of Property Assessment, property and assessment data (OpenDataPhilly). <a href="https://opendataphilly.org/datasets/philadelphia-properties-and-assessment-history/">opendataphilly.org/datasets/philadelphia-properties-and-a…</a></li>
+<li id="src-5">City of Philadelphia, Get the Homestead Exemption. <a href="https://www.phila.gov/services/payments-assistance-taxes/taxes/property-and-real-estate-taxes/get-real-estate-tax-relief/get-the-homestead-exemption/">phila.gov/services/payments-assistance-taxes/taxes/proper…</a></li>
+<li id="src-6">U.S. Census Bureau, American Community Survey 5-year estimates, 2018–2022, block groups: median household income (B19013) and race and Hispanic origin (B03002). <a href="https://www.census.gov/data/developers/data-sets/acs-5year.html">census.gov/data/developers/data-sets/acs-5year.html</a></li>
+<li id="src-7">Davis, Larson, Oliner and Shui, The Price of Residential Land for Counties, ZIP Codes, and Census Tracts in the United States, FHFA Working Paper 19-01. <a href="https://www.fhfa.gov/research/papers/wp1901">fhfa.gov/research/papers/wp1901</a></li>
+<li id="src-8">City of Philadelphia, Vacant Property Indicators (OpenDataPhilly). <a href="https://opendataphilly.org/datasets/vacant-property-indicators/">opendataphilly.org/datasets/vacant-property-indicators/</a></li>
+<li id="src-9">City of Philadelphia, Longtime Owner Occupants Program (LOOP). <a href="https://www.phila.gov/services/payments-assistance-taxes/payment-plans-and-assistance-programs/income-based-programs-for-residents/apply-for-the-longtime-owner-occupants-program-loop/">phila.gov/services/payments-assistance-taxes/payment-plan…</a></li>
+<li id="src-10">City of Philadelphia, Low-Income Senior Citizen Real Estate Tax Freeze. <a href="https://www.phila.gov/services/payments-assistance-taxes/payment-plans-and-assistance-programs/income-based-programs-for-residents/apply-for-the-low-income-senior-citizen-real-estate-tax-freeze/">phila.gov/services/payments-assistance-taxes/payment-plan…</a></li>
+<li id="src-11">Governing, Leaning on the land: Pittsburgh&#x27;s repeal after its 2001 reassessment. <a href="https://www.governing.com/archive/gov-land-tax.html">governing.com/archive/gov-land-tax.html</a></li>
+<li id="src-12">Altoona Mirror, City council decides to cut land value tax, June 6, 2016. <a href="https://www.altoonamirror.com/news/local-news/2016/06/city-council-decides-to-cut-land-value-tax/">altoonamirror.com/news/local-news/2016/06/city-council-de…</a></li>
+<li id="src-13">11 Pa.C.S. § 12531(c)(3), Third Class City Code: separate rates on land and buildings. <a href="https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/11/11.HTM">legis.state.pa.us/WU01/LI/LI/CT/HTM/11/11.HTM</a></li>
+<li id="src-14">8 Pa.C.S. § 1302.1, Borough Code: separate rates on land and buildings. <a href="https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/08/08.HTM">legis.state.pa.us/WU01/LI/LI/CT/HTM/08/08.HTM</a></li>
+<li id="src-15">53 Pa.C.S. § 8583, homestead exclusion; subsection (c) covers split rates. <a href="https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/53/00.085.083.000..HTM">legis.state.pa.us/WU01/LI/LI/CT/HTM/53/00.085.083.000..HTM</a></li>
+<li id="src-16">Progress and Poverty Institute, What happened when Pennsylvania taxed land. <a href="https://progressandpovertyinstitute.org/wp-content/uploads/What-happened-when-PA-taxed-land.pdf">progressandpovertyinstitute.org/wp-content/uploads/What-h…</a></li>
+<li id="src-17">Yang and Hawley, Split-rate taxation: impacts on tax base, Lincoln Institute of Land Policy working paper, 2021 (Table 1: Pennsylvania split-rate municipalities and years). <a href="https://www.lincolninst.edu/app/uploads/legacy-files/pubfiles/yang_wp21zy1.pdf">lincolninst.edu/app/uploads/legacy-files/pubfiles/yang_wp…</a></li>
+<li id="src-18">Dauphin County, 2026 millage rates: City of Harrisburg, separate land and building rates. <a href="https://www.dauphincounty.gov/docs/default-source/tax-assessments/2026-millage-rates-january.pdf">dauphincounty.gov/docs/default-source/tax-assessments/202…</a></li>
+<li id="src-19">City of Allentown, 2026 final budget narrative, p. 44: the bifurcated rate. <a href="https://www.allentownpa.gov/Portals/0/files/Departments/Finance/Budget2026/Final/2026%20Final%20Narrative%20for%20Website.pdf">allentownpa.gov/Portals/0/files/Departments/Finance/Budge…</a></li>
+<li id="src-20">Bourassa, Land value taxation and new housing development in Pittsburgh, Growth and Change, 1987: a 5% cut in the building tax rate, about 14% more new units. <a href="https://doi.org/10.1111/j.1468-2257.1987.tb00087.x">doi.org/10.1111/j.1468-2257.1987.tb00087.x</a></li>
+<li id="src-21">Yang, The effects of the two-rate property tax: what can we learn from the Pennsylvania experience?, Lincoln Institute of Land Policy working paper, 2014. <a href="https://www.lincolninst.edu/publications/working-papers/effects-two-rate-property-tax/">lincolninst.edu/publications/working-papers/effects-two-r…</a></li>
+<li id="src-22">City of Philadelphia, Get a property tax abatement. <a href="https://www.phila.gov/services/payments-assistance-taxes/taxes/property-and-real-estate-taxes/get-real-estate-tax-relief/get-a-property-tax-abatement/">phila.gov/services/payments-assistance-taxes/taxes/proper…</a></li>
+<li id="src-23">Henry George historical marker, 413 S. 10th St., erected by the Pennsylvania Historical and Museum Commission in 1984 (photograph and text, Wikimedia Commons). <a href="https://commons.wikimedia.org/wiki/File:Henry_George_Historical_Marker_413_S_10th_St_Philadelphia_PA_(DSC_3388).jpg">commons.wikimedia.org/wiki/File:Henry_George_Historical_M…</a></li>
+<li id="src-24">Pittsburgh Post-Gazette editorial board, Big Idea: Pittsburgh should return to its roots in land value taxation, Dec. 21, 2025. <a href="https://www.post-gazette.com/opinion/editorials/2025/12/21/land-value-tax-lvt-georgism-property-real-estate-assessment/stories/202512210070">post-gazette.com/opinion/editorials/2025/12/21/land-value…</a></li>
+<li id="src-25">Joseph Gyourko, Thinking about the growing housing affordability problem, Brookings, Mar. 18, 2026. <a href="https://www.brookings.edu/articles/thinking-about-the-growing-housing-affordability-problem/">brookings.edu/articles/thinking-about-the-growing-housing…</a></li>
+<li id="src-26">ATU Local 689, Recycling Transit Created Land Values: a land value tax around Metro stations (2025). <a href="https://www.atulocal689.org/s/LVT-Report-1.pdf">atulocal689.org/s/LVT-Report-1.pdf</a></li>
+<li id="src-27">Chicago Democratic Socialists of America, platform: Protecting Homeowners by Taxing Land, Not Property. <a href="https://chicagodsa.org/cdsa-platform/">chicagodsa.org/cdsa-platform/</a></li>
+<li id="src-28">LVTShift, the open-source parcel-level property tax toolkit PPI&#x27;s model is built on. <a href="https://github.com/drussellmrichie/LVTShift">github.com/drussellmrichie/LVTShift</a></li>
+  </ol>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><strong>Russell Richie</strong>, Director of Strategy and Impact, Progress and Poverty Institute<br><span class="num">rrichie@progressandpovertyinstitute.org</span> · <a href="https://progressandpovertyinstitute.org">progressandpovertyinstitute.org</a></div>
+    <div class="note">Figures as of 2026-10-01.</div>
+  </div>
+</footer>
+</body>
+</html>
