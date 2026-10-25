@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-24",
+  "as_of": "2026-10-25",
   "source": "philly_land_tax_research scripts/philadelphia_council_one_pager.py",
   "model": {
     "tax_year": 2026,
@@ -2994,75 +2994,75 @@
   },
   "progressivity_robustness": {
     "basis": {
-      "surface": "FHFA tract land share of single-family property value, applied to each single-family home's own total; S5 everywhere else (cities/philadelphia/data/fhfa_land_share_by_tract.csv)",
+      "surface": "FHFA tract land share of single-family property value, applied to each single-family house's own total (condominium units keep S5); S5 everywhere else (cities/philadelphia/data/fhfa_land_share_by_tract.csv)",
       "homestead_order": "value_share",
-      "single_family_matched_pct": 93.76116338905796
+      "single_family_matched_pct": 95.92556678000221
     },
     "rates": {
-      "land_rate_pct": 3.1471834383135575,
-      "building_rate_pct": 0.7867958595783894
+      "land_rate_pct": 3.1836475909520954,
+      "building_rate_pct": 0.7959118977380238
     },
     "homes": {
       "parcels": 482976,
-      "pay_less_pct": 73.0804429205592,
-      "aggregate_change_pct": -2.9094499981355715,
-      "aggregate_change_musd": -47.83388403788614,
-      "median_change_usd": -100.17801532446083,
+      "pay_less_pct": 72.25700655933214,
+      "aggregate_change_pct": -3.489096599573349,
+      "aggregate_change_musd": -57.3637774314475,
+      "median_change_usd": -88.66177099364597,
       "median_current_bill_usd": 2530.8384
     },
     "homes_profile": {
       "inc_q": {
         "poorest": {
-          "homes_pct": -7.291878508851601,
-          "pay_less_pct": 86.42872562423545,
-          "median_change_usd": -120.49137454850279
+          "homes_pct": -6.68009478859849,
+          "pay_less_pct": 84.38032189201506,
+          "median_change_usd": -109.89940961637376
         },
         "Q2": {
-          "homes_pct": -6.543673730081867,
-          "pay_less_pct": 88.85639286099558,
-          "median_change_usd": -138.90439855028512
+          "homes_pct": -6.012194836107298,
+          "pay_less_pct": 87.62420740989344,
+          "median_change_usd": -125.21250537480068
         },
         "Q3": {
-          "homes_pct": -5.385809289926802,
-          "pay_less_pct": 78.94138755980862,
-          "median_change_usd": -126.66550862700888
+          "homes_pct": -4.452962422001949,
+          "pay_less_pct": 75.8433014354067,
+          "median_change_usd": -105.87667829057142
         },
         "Q4": {
-          "homes_pct": -1.9993601573114028,
-          "pay_less_pct": 61.85721119349438,
-          "median_change_usd": -69.45205014305657
+          "homes_pct": -3.1119937187466307,
+          "pay_less_pct": 61.084668739536,
+          "median_change_usd": -65.15296113479263
         },
         "richest": {
-          "homes_pct": 1.495811309232642,
-          "pay_less_pct": 39.798385641593185,
-          "median_change_usd": 79.41538763570497
+          "homes_pct": -0.8405798913973528,
+          "pay_less_pct": 44.52718064694631,
+          "median_change_usd": 39.86296726325281
         }
       },
       "min_q": {
         "whitest": {
-          "homes_pct": 1.0066356796404108,
-          "pay_less_pct": 48.49714333029726,
-          "median_change_usd": 5.229435667511098
+          "homes_pct": -1.540847030957293,
+          "pay_less_pct": 49.5849548728989,
+          "median_change_usd": 0.739855034930315
         },
         "Q2": {
-          "homes_pct": -1.5355786701405694,
-          "pay_less_pct": 58.08367127369031,
-          "median_change_usd": -64.53674766654535
+          "homes_pct": -1.9783586057770086,
+          "pay_less_pct": 59.09956136721013,
+          "median_change_usd": -51.06274539292508
         },
         "Q3": {
-          "homes_pct": -4.014981513518068,
-          "pay_less_pct": 72.69891277489499,
-          "median_change_usd": -123.25447204170086
+          "homes_pct": -3.2457285917285694,
+          "pay_less_pct": 69.58961370562557,
+          "median_change_usd": -109.01995899546182
         },
         "Q4": {
-          "homes_pct": -8.717996482638535,
-          "pay_less_pct": 91.57426555404295,
-          "median_change_usd": -134.16401034579098
+          "homes_pct": -7.841304591600828,
+          "pay_less_pct": 88.89939623190514,
+          "median_change_usd": -119.4359856998276
         },
         "most non-white": {
-          "homes_pct": -10.818830799197777,
-          "pay_less_pct": 95.21657447030582,
-          "median_change_usd": -139.74704374764792
+          "homes_pct": -9.792808933176122,
+          "pay_less_pct": 94.71453919215114,
+          "median_change_usd": -123.64644033865989
         }
       }
     },
@@ -3070,89 +3070,89 @@
       "inc_q": {
         "compare": "poorest minus richest, aggregate % change of homes",
         "s5": -11.15617335400092,
-        "fhfa": -8.787689818084242,
-        "fhfa_over_s5": 0.7876974961968234,
-        "s5_tract_smoothed": -11.81238076860922,
-        "tract_smoothed_over_s5": 1.058820116341502,
-        "fhfa_over_tract_smoothed": 0.7439389222397119
+        "fhfa": -5.839514897201138,
+        "fhfa_over_s5": 0.5234335028602726,
+        "s5_tract_smoothed": -11.619352085121516,
+        "tract_smoothed_over_s5": 1.0415177065130927,
+        "fhfa_over_tract_smoothed": 0.5025680308524766
       },
       "min_q": {
         "compare": "most non-white minus whitest, aggregate % change of homes",
         "s5": -18.64910799000987,
-        "fhfa": -11.825466478838187,
-        "fhfa_over_s5": 0.6341035981545586,
-        "s5_tract_smoothed": -18.595385938323492,
-        "tract_smoothed_over_s5": 0.9971193232558277,
-        "fhfa_over_tract_smoothed": 0.6359355228259563
+        "fhfa": -8.251961902218829,
+        "fhfa_over_s5": 0.44248560878296794,
+        "s5_tract_smoothed": -18.331997798314358,
+        "tract_smoothed_over_s5": 0.9829959592777636,
+        "fhfa_over_tract_smoothed": 0.45013980434678014
       }
     },
     "s5_tract_smoothed": {
       "basis": "S5's value-weighted land share of the same single-family homes' totals, one share per 2020 tract, applied to each matched home's own total; S5 everywhere else. FHFA's form with S5's land, so fhfa_over_tract_smoothed compares the two land estimates and nothing else",
       "rates": {
-        "land_rate_pct": 3.1013633564437098,
-        "building_rate_pct": 0.7753408391109274
+        "land_rate_pct": 3.102915221421459,
+        "building_rate_pct": 0.7757288053553647
       },
       "homes": {
         "parcels": 482976,
-        "pay_less_pct": 61.865806996620954,
-        "aggregate_change_pct": -2.1810783560810343,
-        "aggregate_change_musd": -35.858821849208596,
-        "median_change_usd": -99.34674781514883,
+        "pay_less_pct": 62.04242032730405,
+        "aggregate_change_pct": -2.205747330817953,
+        "aggregate_change_musd": -36.26440121219993,
+        "median_change_usd": -108.42359808954723,
         "median_current_bill_usd": 2530.8384
       },
       "homes_profile": {
         "inc_q": {
           "poorest": {
-            "homes_pct": -8.40495063767197,
-            "pay_less_pct": 78.88992828188339,
-            "median_change_usd": -145.7901366800486
+            "homes_pct": -8.496437191272078,
+            "pay_less_pct": 79.55314096567605,
+            "median_change_usd": -148.88735837141644
           },
           "Q2": {
-            "homes_pct": -7.564647455317697,
-            "pay_less_pct": 75.07821021467356,
-            "median_change_usd": -180.81946024364356
+            "homes_pct": -7.354432301293389,
+            "pay_less_pct": 74.25475554063935,
+            "median_change_usd": -186.99450292964195
           },
           "Q3": {
-            "homes_pct": -4.480391557462681,
-            "pay_less_pct": 63.97966507177033,
-            "median_change_usd": -171.9054149620771
+            "homes_pct": -4.110076156897835,
+            "pay_less_pct": 63.509569377990424,
+            "median_change_usd": -178.53926788776175
           },
           "Q4": {
-            "homes_pct": -1.0951048019574583,
-            "pay_less_pct": 49.27290121980388,
-            "median_change_usd": 9.879132243058066
+            "homes_pct": -1.2620471805080746,
+            "pay_less_pct": 48.6845252331978,
+            "median_change_usd": 12.535421848549845
           },
           "richest": {
-            "homes_pct": 3.40743013093725,
-            "pay_less_pct": 32.58670259476236,
-            "median_change_usd": 280.39200040977676
+            "homes_pct": 3.1229148938494378,
+            "pay_less_pct": 34.95170157225517,
+            "median_change_usd": 327.83897953526935
           }
         },
         "min_q": {
           "whitest": {
-            "homes_pct": 1.7816853231465979,
-            "pay_less_pct": 39.974745383787365,
-            "median_change_usd": 129.25918030472462
+            "homes_pct": 1.5727761172901866,
+            "pay_less_pct": 39.42411194833154,
+            "median_change_usd": 134.823649369622
           },
           "Q2": {
-            "homes_pct": 1.698174930365104,
-            "pay_less_pct": 38.33898866175618,
-            "median_change_usd": 93.66782408340691
+            "homes_pct": 1.6896698785824338,
+            "pay_less_pct": 39.84834064387983,
+            "median_change_usd": 95.14010150733293
           },
           "Q3": {
-            "homes_pct": -0.9841640244088956,
-            "pay_less_pct": 56.4945226917058,
-            "median_change_usd": -44.414171660090915
+            "homes_pct": -0.9196377407010736,
+            "pay_less_pct": 56.975331521291494,
+            "median_change_usd": -50.987544193431546
           },
           "Q4": {
-            "homes_pct": -12.48401301741955,
-            "pay_less_pct": 83.70241818994273,
-            "median_change_usd": -238.70555807741766
+            "homes_pct": -12.304040442410214,
+            "pay_less_pct": 83.5818724085255,
+            "median_change_usd": -239.3399371285277
           },
           "most non-white": {
-            "homes_pct": -16.813700615176895,
-            "pay_less_pct": 91.03016386598476,
-            "median_change_usd": -212.19532529642765
+            "homes_pct": -16.759221681024172,
+            "pay_less_pct": 91.02077027450161,
+            "median_change_usd": -211.23399395866295
           }
         }
       }
@@ -3571,7 +3571,7 @@
     "surfaces": {
       "basis": {
         "source": "philly_open_avmkit/notebooks/pipeline/data/us-pa-philadelphia/out/land/land_surfaces_ty2026.csv (file dated 2026-10-25)",
-        "tilts": "philly_open_avmkit/notebooks/pipeline/data/us-pa-philadelphia/out/land/equity_tilt.csv (file dated 2026-09-29)",
+        "tilts": "philly_open_avmkit/notebooks/pipeline/data/us-pa-philadelphia/out/land/equity_tilt.csv (file dated 2026-10-25)",
         "construction": "each surface's $/sqft x the export's lot area where the parcel is in philly_open_avmkit's universe (for s0_opa, this roll's own OPA land there), the headline's land elsewhere; beyond the support edge each surface divided by its own held-out median ratio in the lot's size band where it has 25 or more held-out sales there (relevel_beyond_edge says which); the headline's within-total re-split, bare-lot rule, use-restricted tracts, homestead order and revenue-neutral solve",
         "held_out_tilt": "median held-out ratio (surface / land sale price) in the low fifth over the high fifth, block-group fifths, held-out folds; interval resamples gma2 market areas. Above 1, the surface over-values the poorer or more non-white fifth's land relative to the other's",
         "s5_row": "rebuilt from the surface file; must reproduce the headline"
@@ -3679,23 +3679,23 @@
           "held_out_tilt": {
             "income": {
               "comparison": "poorest / richest",
-              "tilt": 1.218993459633608,
+              "tilt": 1.196407750873965,
               "ci_cluster": [
-                1.1037037869942663,
-                1.36756984451981
+                1.0844517969149112,
+                1.359487773908331
               ],
-              "n_low": 344,
-              "n_high": 1267
+              "n_low": 316,
+              "n_high": 1216
             },
             "race": {
               "comparison": "most non-white / whitest",
-              "tilt": 1.3320796639726682,
+              "tilt": 1.270428160296252,
               "ci_cluster": [
-                1.110001962210985,
-                1.595005638668846
+                1.0673178961584695,
+                1.502879227178143
               ],
-              "n_low": 295,
-              "n_high": 1149
+              "n_low": 272,
+              "n_high": 1126
             },
             "roll": "OPA's TY2027 land, philly_open_avmkit's roll; the bills in this row use TY2026"
           }
@@ -3816,23 +3816,23 @@
           "held_out_tilt": {
             "income": {
               "comparison": "poorest / richest",
-              "tilt": 1.1054319602033431,
+              "tilt": 1.1073425427077388,
               "ci_cluster": [
-                1.015945445091566,
-                1.213656398125338
+                1.0087918278276935,
+                1.2160882816906604
               ],
-              "n_low": 351,
-              "n_high": 1292
+              "n_low": 323,
+              "n_high": 1240
             },
             "race": {
               "comparison": "most non-white / whitest",
-              "tilt": 1.1516433572532707,
+              "tilt": 1.16199051551579,
               "ci_cluster": [
-                1.0460472800121727,
-                1.3312892519255497
+                1.0357963977957956,
+                1.3611408407308991
               ],
-              "n_low": 300,
-              "n_high": 1161
+              "n_low": 277,
+              "n_high": 1138
             }
           }
         },
@@ -3952,23 +3952,23 @@
           "held_out_tilt": {
             "income": {
               "comparison": "poorest / richest",
-              "tilt": 1.0982414188994414,
+              "tilt": 1.1088861650755508,
               "ci_cluster": [
-                1.0085234204052294,
-                1.2122526713463937
+                1.0257886701447796,
+                1.1997895747813814
               ],
-              "n_low": 351,
-              "n_high": 1292
+              "n_low": 323,
+              "n_high": 1240
             },
             "race": {
               "comparison": "most non-white / whitest",
-              "tilt": 1.1917691064812852,
+              "tilt": 1.2093748046555692,
               "ci_cluster": [
-                1.0722903495621463,
-                1.4716194183989348
+                1.061082197602776,
+                1.484239377106585
               ],
-              "n_low": 300,
-              "n_high": 1161
+              "n_low": 277,
+              "n_high": 1138
             }
           }
         },
@@ -4088,23 +4088,23 @@
           "held_out_tilt": {
             "income": {
               "comparison": "poorest / richest",
-              "tilt": 1.76978685028344,
+              "tilt": 1.7486871402254165,
               "ci_cluster": [
-                1.5522887076485468,
-                2.171586249726876
+                1.5081411110008969,
+                2.113625233542612
               ],
-              "n_low": 345,
-              "n_high": 1281
+              "n_low": 317,
+              "n_high": 1232
             },
             "race": {
               "comparison": "most non-white / whitest",
-              "tilt": 1.9649801407262324,
+              "tilt": 1.8562512302798424,
               "ci_cluster": [
-                1.6778085009995185,
-                2.560573234813437
+                1.6378832182543095,
+                2.378673437185601
               ],
-              "n_low": 295,
-              "n_high": 1156
+              "n_low": 273,
+              "n_high": 1134
             }
           }
         },
@@ -4224,23 +4224,23 @@
           "held_out_tilt": {
             "income": {
               "comparison": "poorest / richest",
-              "tilt": 1.0003170084574424,
+              "tilt": 1.0290998269680316,
               "ci_cluster": [
-                0.940542202840023,
-                1.0995540552509546
+                0.9590140579688552,
+                1.1105125925448298
               ],
-              "n_low": 351,
-              "n_high": 1292
+              "n_low": 323,
+              "n_high": 1240
             },
             "race": {
               "comparison": "most non-white / whitest",
-              "tilt": 1.0883210152658345,
+              "tilt": 1.1221820319598392,
               "ci_cluster": [
-                0.978396050673966,
-                1.2008245075175463
+                0.9932623397922062,
+                1.2151309694433348
               ],
-              "n_low": 300,
-              "n_high": 1161
+              "n_low": 277,
+              "n_high": 1138
             }
           }
         },
@@ -4360,23 +4360,23 @@
           "held_out_tilt": {
             "income": {
               "comparison": "poorest / richest",
-              "tilt": 1.6188349105609072,
+              "tilt": 1.5798226203432326,
               "ci_cluster": [
-                1.1341417922619927,
-                2.0608607511011403
+                1.1168719059016272,
+                2.030689465350561
               ],
-              "n_low": 104,
-              "n_high": 191
+              "n_low": 102,
+              "n_high": 189
             },
             "race": {
               "comparison": "most non-white / whitest",
-              "tilt": 1.813757901710349,
+              "tilt": 1.8117707812326909,
               "ci_cluster": [
-                1.473532933065252,
-                2.754147850152777
+                1.470892918765887,
+                2.6370471322525906
               ],
-              "n_low": 81,
-              "n_high": 146
+              "n_low": 80,
+              "n_high": 144
             }
           }
         },
@@ -4496,23 +4496,23 @@
           "held_out_tilt": {
             "income": {
               "comparison": "poorest / richest",
-              "tilt": 1.078625716354318,
+              "tilt": 1.0779670715893412,
               "ci_cluster": [
-                1.0270240507521065,
-                1.168968024712726
+                1.025347539825182,
+                1.1311288324157065
               ],
-              "n_low": 351,
-              "n_high": 1292
+              "n_low": 323,
+              "n_high": 1240
             },
             "race": {
               "comparison": "most non-white / whitest",
-              "tilt": 1.127197687868722,
+              "tilt": 1.096792571878582,
               "ci_cluster": [
-                1.0650945823961382,
-                1.2697517512665153
+                1.0554957111221812,
+                1.2434779471441642
               ],
-              "n_low": 300,
-              "n_high": 1161
+              "n_low": 277,
+              "n_high": 1138
             }
           }
         },
@@ -4632,23 +4632,23 @@
           "held_out_tilt": {
             "income": {
               "comparison": "poorest / richest",
-              "tilt": 1.140384485134396,
+              "tilt": 1.1344807837014368,
               "ci_cluster": [
-                1.049442085606804,
-                1.2351362585968826
+                1.035726976403509,
+                1.220537537037462
               ],
-              "n_low": 351,
-              "n_high": 1292
+              "n_low": 323,
+              "n_high": 1240
             },
             "race": {
               "comparison": "most non-white / whitest",
-              "tilt": 1.1997843085673427,
+              "tilt": 1.1797941954078714,
               "ci_cluster": [
-                1.1128697697937444,
-                1.4387207622385598
+                1.114761125964185,
+                1.378915138063991
               ],
-              "n_low": 300,
-              "n_high": 1161
+              "n_low": 277,
+              "n_high": 1138
             }
           }
         }
@@ -5562,132 +5562,132 @@
     },
     "held_out_equity": {
       "basis": {
-        "tilt": "philly_open_avmkit/notebooks/pipeline/data/us-pa-philadelphia/out/land/equity_tilt.csv (file dated 2026-09-29)",
-        "reconciliation": "philly_open_avmkit/notebooks/pipeline/data/us-pa-philadelphia/out/land/fhfa_reconciliation.csv (file dated 2026-09-29)",
+        "tilt": "philly_open_avmkit/notebooks/pipeline/data/us-pa-philadelphia/out/land/equity_tilt.csv (file dated 2026-10-25)",
+        "reconciliation": "philly_open_avmkit/notebooks/pipeline/data/us-pa-philadelphia/out/land/fhfa_reconciliation.csv (file dated 2026-10-25)",
         "read": "tilt = median held-out ratio in the low fifth over the high fifth; 1 is no tilt",
         "opa_roll": "philly_open_avmkit's OPA figures (its S0 OPA surface, and the OPA-total terms of the reconciliation) are on OPA's TY2027 roll; this model's bills, and land_robustness.opa_tilt_relevel, are on TY2026"
       },
       "s5_held_out_tilt": {
         "all | bg | income": {
           "comparison": "poorest / richest",
-          "tilt": 1.0003170084574424,
+          "tilt": 1.0290998269680316,
           "ci_cluster": [
-            0.940542202840023,
-            1.0995540552509546
+            0.9590140579688552,
+            1.1105125925448298
           ],
-          "n_low": 351,
-          "n_high": 1292
+          "n_low": 323,
+          "n_high": 1240
         },
         "all | bg | race": {
           "comparison": "most non-white / whitest",
-          "tilt": 1.0883210152658345,
+          "tilt": 1.1221820319598392,
           "ci_cluster": [
-            0.978396050673966,
-            1.2008245075175463
+            0.9932623397922062,
+            1.2151309694433348
           ],
-          "n_low": 300,
-          "n_high": 1161
+          "n_low": 277,
+          "n_high": 1138
         },
         "all | tract | income": {
           "comparison": "poorest / richest",
-          "tilt": 1.0183586050895026,
+          "tilt": 1.0316759938042923,
           "ci_cluster": [
-            0.9588441973906158,
-            1.057926266750751
+            0.9971449982768884,
+            1.0831143371226262
           ],
-          "n_low": 467,
-          "n_high": 1860
+          "n_low": 435,
+          "n_high": 1800
         },
         "all | tract | race": {
           "comparison": "most non-white / whitest",
-          "tilt": 1.0598485169507392,
+          "tilt": 1.071745865696533,
           "ci_cluster": [
-            0.9720715705861496,
-            1.1859609492148646
+            0.981637397901235,
+            1.1766359405413915
           ],
-          "n_low": 280,
-          "n_high": 879
+          "n_low": 257,
+          "n_high": 857
         },
         "W1 still vacant | bg | income": {
           "comparison": "poorest / richest",
-          "tilt": 0.9737802259744543,
+          "tilt": 0.9852987484611742,
           "ci_cluster": [
-            0.8863812163591888,
-            1.134118402504894
+            0.8848933555504489,
+            1.158395862207361
           ],
-          "n_low": 185,
-          "n_high": 979
+          "n_low": 172,
+          "n_high": 947
         },
         "W1 still vacant | bg | race": {
           "comparison": "most non-white / whitest",
-          "tilt": 1.0694179271137083,
+          "tilt": 1.0450519831216163,
           "ci_cluster": [
-            0.9321992535531846,
-            1.2803837953170258
+            0.92041849147153,
+            1.303562041392341
           ],
-          "n_low": 168,
-          "n_high": 926
+          "n_low": 153,
+          "n_high": 908
         },
         "W1b/W2 built on or torn down | bg | income": {
           "comparison": "poorest / richest",
-          "tilt": 0.983088130387816,
+          "tilt": 1.0073970100879437,
           "ci_cluster": [
-            0.8826113629566981,
-            1.0614785506246571
+            0.9000033794503528,
+            1.072087353258841
           ],
-          "n_low": 166,
-          "n_high": 313
+          "n_low": 151,
+          "n_high": 293
         },
         "W1b/W2 built on or torn down | bg | race": {
           "comparison": "most non-white / whitest",
-          "tilt": 1.0077534095105218,
+          "tilt": 1.0088718460440786,
           "ci_cluster": [
-            0.7924767312680732,
-            1.071590130680122
+            0.7990530090223854,
+            1.0889599132340178
           ],
-          "n_low": 132,
-          "n_high": 235
+          "n_low": 124,
+          "n_high": 230
         },
         "far (> 320 m from another witness) | bg | income": {
           "comparison": "poorest / richest",
-          "tilt": 1.894170933357844,
+          "tilt": 1.6980086639870515,
           "ci_cluster": [
-            1.1150640831348038,
-            3.1872599886060597
+            0.6607510806899951,
+            2.413834097229814
           ],
-          "n_low": 28,
-          "n_high": 25
+          "n_low": 22,
+          "n_high": 24
         },
         "far (> 320 m from another witness) | bg | race": {
           "comparison": "most non-white / whitest",
-          "tilt": 2.0885838892619515,
+          "tilt": 1.707404216595173,
           "ci_cluster": [
-            0.6216903267067416,
-            5.654773244410291
+            0.6669622640167138,
+            4.015266640249331
           ],
-          "n_low": 36,
-          "n_high": 12
+          "n_low": 32,
+          "n_high": 11
         }
       },
       "fhfa_reconciliation": {
         "income: B0 FHFA share / S5 share, parcel medians (audit's form)": {
           "comparison": "poorest / richest",
-          "value": 1.4487182868581276,
+          "value": 1.3803596166683283,
           "ci": null
         },
         "income: B0 same, condominium units kept (the audit's population)": {
           "comparison": "poorest / richest",
-          "value": 1.374437756541991,
+          "value": 1.332427419001582,
           "ci": null
         },
         "income: B1 FHFA share / S5 share, log-mean (total)": {
           "comparison": "poorest / richest",
-          "value": 1.3885870926775743,
+          "value": 1.3715041795769187,
           "ci": null
         },
         "income: B1 land term: FHFA land / S5 land": {
           "comparison": "poorest / richest",
-          "value": 1.3997977089516775,
+          "value": 1.3825768786943486,
           "ci": null
         },
         "income: B1 denominator term: OPA total / FHFA property value": {
@@ -5697,86 +5697,86 @@
         },
         "income: B2 land sales test: S5 per parcel / sale": {
           "comparison": "poorest / richest",
-          "value": 1.0003170084574424,
+          "value": 1.0290998269680316,
           "ci": [
-            0.940542202840023,
-            1.0995540552509546
+            0.9590140579688552,
+            1.1105125925448298
           ]
         },
         "income: B2 land sales test: S5 smoothed to the tract / sale": {
           "comparison": "poorest / richest",
-          "value": 1.0586761022867548,
+          "value": 1.053454410009517,
           "ci": [
-            0.9658156992034612,
-            1.1690878724606495
+            0.9582278148945488,
+            1.1494908728486009
           ]
         },
         "income: B2 land sales test: FHFA tract land $/sqft / sale": {
           "comparison": "poorest / richest",
-          "value": 1.355111142457576,
+          "value": 1.3428348851019394,
           "ci": [
-            1.2080877275827888,
-            1.5079973892300569
+            1.202695979261452,
+            1.493981473547092
           ]
         },
         "income: B3 house sales test: OPA total / sale": {
           "comparison": "poorest / richest",
-          "value": 1.1767534249479796,
+          "value": 1.176233135553454,
           "ci": [
-            1.1174680448854026,
-            1.2375345090319598
+            1.1167369297375735,
+            1.236568777031097
           ]
         },
         "income: B3 house sales test: FHFA implied property value / sale": {
           "comparison": "poorest / richest",
-          "value": 1.3076434055277133,
+          "value": 1.3070564768009334,
           "ci": [
-            1.2073521497769573,
-            1.416071908148662
+            1.2062366385792374,
+            1.4159339986149977
           ]
         },
         "income: B4 FHFA share against the sales-implied share": {
           "comparison": "poorest / richest",
-          "value": 1.03630021512685,
+          "value": 1.027373268818938,
           "ci": [
-            0.8982812637643134,
-            1.1904997267211173
+            0.8888274070307101,
+            1.1811677773835856
           ]
         },
         "income: B4 S5 share of OPA total against the sales-implied share": {
           "comparison": "poorest / richest",
-          "value": 0.850065092015061,
+          "value": 0.8749114404805545,
           "ci": [
-            0.7845433728880666,
-            0.9410148092343822
+            0.8107870254764313,
+            0.9649484207883784
           ]
         },
         "income: B4 sales-predicted FHFA share / S5 share": {
           "comparison": "poorest / richest",
-          "value": 1.2190833676869648,
+          "value": 1.1742597265097394,
           "ci": [
-            1.0498090554565758,
-            1.3856676978436555
+            1.0058878517187306,
+            1.3344866102766708
           ]
         },
         "race: B0 FHFA share / S5 share, parcel medians (audit's form)": {
           "comparison": "most non-white / whitest",
-          "value": 1.5101745362837304,
+          "value": 1.4541780280850782,
           "ci": null
         },
         "race: B0 same, condominium units kept (the audit's population)": {
           "comparison": "most non-white / whitest",
-          "value": 1.4877938941961155,
+          "value": 1.4016433617230295,
           "ci": null
         },
         "race: B1 FHFA share / S5 share, log-mean (total)": {
           "comparison": "most non-white / whitest",
-          "value": 1.5088927482908443,
+          "value": 1.4275652243333732,
           "ci": null
         },
         "race: B1 land term: FHFA land / S5 land": {
           "comparison": "most non-white / whitest",
-          "value": 1.5278316212598588,
+          "value": 1.4454833145815087,
           "ci": null
         },
         "race: B1 denominator term: OPA total / FHFA property value": {
@@ -5786,66 +5786,66 @@
         },
         "race: B2 land sales test: S5 per parcel / sale": {
           "comparison": "most non-white / whitest",
-          "value": 1.0883210152658345,
+          "value": 1.1221820319598392,
           "ci": [
-            0.978396050673966,
-            1.2008245075175463
+            0.9932623397922062,
+            1.2151309694433348
           ]
         },
         "race: B2 land sales test: S5 smoothed to the tract / sale": {
           "comparison": "most non-white / whitest",
-          "value": 1.0003149754630032,
+          "value": 0.9900214868113696,
           "ci": [
-            0.9115151304675436,
-            1.123732983690486
+            0.9184486176005168,
+            1.1055564780415266
           ]
         },
         "race: B2 land sales test: FHFA tract land $/sqft / sale": {
           "comparison": "most non-white / whitest",
-          "value": 1.5082558957405767,
+          "value": 1.4700009396430778,
           "ci": [
-            1.3903080069962768,
-            1.6793480052972636
+            1.347639190745526,
+            1.6181613580562562
           ]
         },
         "race: B3 house sales test: OPA total / sale": {
           "comparison": "most non-white / whitest",
-          "value": 1.1674399853673847,
+          "value": 1.1664789446768642,
           "ci": [
-            1.104774618882524,
-            1.2382446785434564
+            1.1038606488214808,
+            1.2379422102502122
           ]
         },
         "race: B3 house sales test: FHFA implied property value / sale": {
           "comparison": "most non-white / whitest",
-          "value": 1.26929464699034,
+          "value": 1.2679871417347393,
           "ci": [
-            1.1546592909428686,
-            1.414699296891223
+            1.1539844581450571,
+            1.414054907558094
           ]
         },
         "race: B4 FHFA share against the sales-implied share": {
           "comparison": "most non-white / whitest",
-          "value": 1.1882630241267027,
+          "value": 1.15931849090517,
           "ci": [
-            1.036714886333619,
-            1.3803213728371402
+            1.008417315721376,
+            1.3275226291085187
           ]
         },
         "race: B4 S5 share of OPA total against the sales-implied share": {
           "comparison": "most non-white / whitest",
-          "value": 0.9322286617785736,
+          "value": 0.9620251073376244,
           "ci": [
-            0.826337144712001,
-            1.0448389750739102
+            0.8423114063549787,
+            1.0590058028726814
           ]
         },
         "race: B4 sales-predicted FHFA share / S5 share": {
           "comparison": "most non-white / whitest",
-          "value": 1.274647597575093,
+          "value": 1.205081324866405,
           "ci": [
-            1.1134394345936325,
-            1.448264222710406
+            1.0535667076675037,
+            1.4053631033040548
           ]
         }
       }
