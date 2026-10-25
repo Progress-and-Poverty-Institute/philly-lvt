@@ -27,7 +27,7 @@
       "sources": {
         "factors": "philly_open_avmkit/notebooks/pipeline/data/us-pa-philadelphia/out/land/large_lot_relevel_meta.json (file dated 2026-10-24)",
         "per_parcel": "philly_open_avmkit/notebooks/pipeline/data/us-pa-philadelphia/out/land/large_lot_relevel_parcels.csv (file dated 2026-10-24)",
-        "painted_lots": "philly_open_avmkit/notebooks/pipeline/data/us-pa-philadelphia/out/land/land_surfaces_ty2026.csv (file dated 2026-10-24)"
+        "painted_lots": "philly_open_avmkit/notebooks/pipeline/data/us-pa-philadelphia/out/land/land_surfaces_ty2026.csv (file dated 2026-10-25)"
       },
       "parcels_beyond_support": 44744,
       "factor_from": {
@@ -3570,7 +3570,7 @@
     },
     "surfaces": {
       "basis": {
-        "source": "philly_open_avmkit/notebooks/pipeline/data/us-pa-philadelphia/out/land/land_surfaces_ty2026.csv (file dated 2026-10-24)",
+        "source": "philly_open_avmkit/notebooks/pipeline/data/us-pa-philadelphia/out/land/land_surfaces_ty2026.csv (file dated 2026-10-25)",
         "tilts": "philly_open_avmkit/notebooks/pipeline/data/us-pa-philadelphia/out/land/equity_tilt.csv (file dated 2026-09-29)",
         "construction": "each surface's $/sqft x the export's lot area where the parcel is in philly_open_avmkit's universe (for s0_opa, this roll's own OPA land there), the headline's land elsewhere; beyond the support edge each surface divided by its own held-out median ratio in the lot's size band where it has 25 or more held-out sales there (relevel_beyond_edge says which); the headline's within-total re-split, bare-lot rule, use-restricted tracts, homestead order and revenue-neutral solve",
         "held_out_tilt": "median held-out ratio (surface / land sale price) in the low fifth over the high fifth, block-group fifths, held-out folds; interval resamples gma2 market areas. Above 1, the surface over-values the poorer or more non-white fifth's land relative to the other's",
@@ -3973,113 +3973,113 @@
           }
         },
         "s4_kolbe": {
-          "land_rate_pct": 3.3783054916461084,
-          "building_rate_pct": 0.8445763729115271,
-          "taxable_land_busd": 37.80690746271399,
-          "break_even_land_share_pct": 21.913298583621593,
+          "land_rate_pct": 3.4301105344125182,
+          "building_rate_pct": 0.8575276336031296,
+          "taxable_land_busd": 36.36945935029719,
+          "break_even_land_share_pct": 21.078907359069362,
           "homes": {
             "parcels": 482976,
-            "pay_less_pct": 60.7742413701716,
-            "aggregate_change_pct": -5.5524516965120725,
-            "aggregate_change_musd": -91.28712668962217,
-            "median_change_usd": -44.88831962401696,
+            "pay_less_pct": 52.197417677068835,
+            "aggregate_change_pct": -5.982893873170769,
+            "aggregate_change_musd": -98.36396979622364,
+            "median_change_usd": -10.543323571413907,
             "median_current_bill_usd": 2530.8384
           },
-          "homestead_pay_less_pct": 65.29966703662598,
+          "homestead_pay_less_pct": 52.902793192748796,
           "by_property_group": {
             "commercial/mixed/other": {
-              "pay_less_pct": 23.82,
-              "change_musd": 39.51,
-              "change_pct": 7.94
+              "pay_less_pct": 28.99,
+              "change_musd": 41.81,
+              "change_pct": 8.41
             },
             "homes": {
-              "pay_less_pct": 60.77,
-              "change_musd": -91.29,
-              "change_pct": -5.55
+              "pay_less_pct": 52.2,
+              "change_musd": -98.36,
+              "change_pct": -5.98
             },
             "large multifamily": {
-              "pay_less_pct": 46.16,
-              "change_musd": -27.06,
-              "change_pct": -12.1
+              "pay_less_pct": 44.65,
+              "change_musd": -24.05,
+              "change_pct": -10.75
             },
             "vacant land": {
-              "pay_less_pct": 3.84,
-              "change_musd": 78.83,
-              "change_pct": 147.02
+              "pay_less_pct": 4.21,
+              "change_musd": 80.6,
+              "change_pct": 150.31
             }
           },
           "homes_profile": {
             "inc_q": {
               "poorest": {
-                "homes_pct": -0.40864063535729356,
-                "pay_less_pct": 43.44582763666019,
-                "median_change_usd": 12.879139036386391
+                "homes_pct": 1.560397554077042,
+                "pay_less_pct": 27.947278789187113,
+                "median_change_usd": 56.79614684818915
               },
               "Q2": {
-                "homes_pct": -0.8637881762487032,
-                "pay_less_pct": 55.65930312001822,
-                "median_change_usd": -16.12115897614956
+                "homes_pct": 0.9233919400542412,
+                "pay_less_pct": 45.0047345647197,
+                "median_change_usd": 13.576211519382525
               },
               "Q3": {
-                "homes_pct": -4.324442348669022,
-                "pay_less_pct": 64.89114832535886,
-                "median_change_usd": -60.18458928131895
+                "homes_pct": -4.224127609042483,
+                "pay_less_pct": 56.171052631578945,
+                "median_change_usd": -26.850050661383648
               },
               "Q4": {
-                "homes_pct": -6.225119130051537,
-                "pay_less_pct": 70.29179622099976,
-                "median_change_usd": -109.14693317783838
+                "homes_pct": -7.2590871303733095,
+                "pay_less_pct": 65.61588136809375,
+                "median_change_usd": -113.61513682637144
               },
               "richest": {
-                "homes_pct": -10.342582767169562,
-                "pay_less_pct": 76.05408461547715,
-                "median_change_usd": -283.99755622780276
+                "homes_pct": -12.561729541332411,
+                "pay_less_pct": 74.78497275319083,
+                "median_change_usd": -404.2036191494476
               }
             },
             "min_q": {
               "whitest": {
-                "homes_pct": -9.800432650701463,
-                "pay_less_pct": 76.27515111368717,
-                "median_change_usd": -196.5853729746368
+                "homes_pct": -11.840798852907675,
+                "pay_less_pct": 75.0445060859485,
+                "median_change_usd": -249.44552494070297
               },
               "Q2": {
-                "homes_pct": -7.118808694358336,
-                "pay_less_pct": 73.99342050815196,
-                "median_change_usd": -161.8319420836972
+                "homes_pct": -8.297898440751727,
+                "pay_less_pct": 69.09811305139452,
+                "median_change_usd": -171.03378588183637
               },
               "Q3": {
-                "homes_pct": -3.440412223046929,
-                "pay_less_pct": 61.10287455728523,
-                "median_change_usd": -44.34282288258737
+                "homes_pct": -4.017061338043371,
+                "pay_less_pct": 57.69911868874063,
+                "median_change_usd": -33.24803569524124
               },
               "Q4": {
-                "homes_pct": 1.059258857852985,
-                "pay_less_pct": 45.33560569059223,
-                "median_change_usd": 9.514117960273325
+                "homes_pct": 3.6922933951220704,
+                "pay_less_pct": 31.950867202194765,
+                "median_change_usd": 43.85602006482725
               },
               "most non-white": {
-                "homes_pct": 1.1240513459206847,
-                "pay_less_pct": 46.81557248721428,
-                "median_change_usd": 4.8912573277027604
+                "homes_pct": 5.130949168060739,
+                "pay_less_pct": 26.647531572904708,
+                "median_change_usd": 49.336508251159444
               }
             }
           },
           "spread": {
-            "inc_q": 9.933942131812268,
-            "min_q": 10.924483996622147
+            "inc_q": 14.122127095409454,
+            "min_q": 16.971748020968413
           },
           "relevel_beyond_edge": {
             "held_out": {
-              "edge to 1 acre": 0.7833032145833064,
-              "1 acre and over": 0.761832850169731,
+              "edge to 1 acre": 0.7984556311123618,
+              "1 acre and over": 0.7628389433116954,
               "sales": {
                 "edge to 1 acre": 96,
                 "1 acre and over": 30
               }
             },
             "applied": {
-              "edge to 1 acre": 0.7833032145833064,
-              "1 acre and over": 0.761832850169731
+              "edge to 1 acre": 0.7984556311123618,
+              "1 acre and over": 0.7628389433116954
             },
             "scored_as": "s4_kolbe_cv"
           },
@@ -4656,27 +4656,27 @@
     },
     "opa_tilt_relevel": {
       "basis": {
-        "sales": "philly_open_avmkit/notebooks/pipeline/data/us-pa-philadelphia/out/models/residential_sf/main/assessor/sales.csv (file dated 2026-09-26)",
+        "sales": "philly_open_avmkit/notebooks/pipeline/data/us-pa-philadelphia/out/models/residential_sf/main/assessor/sales.csv (file dated 2026-10-24)",
         "sales_filter": "valid_for_ratio_study, not vacant, sold 2024-01-01 or later, a billed home here",
         "ratio": "this model's TY2026 gross total / time-adjusted sale price",
         "relevel": "each billed home's total divided by its fifth's median ratio, rescaled so homes' total value is unchanged; homestead-only homes keep their exemption dollars, other relief scales; S5 land and every other parcel unchanged",
-        "home_sales": 11956,
-        "median_ratio": 1.1167002234858905
+        "home_sales": 11896,
+        "median_ratio": 1.117617996930978
       },
       "by_inc_q": {
-        "land_rate_pct": 3.1117347852865653,
-        "building_rate_pct": 0.7779336963216413,
-        "taxable_land_busd": 45.9820426664996,
-        "break_even_land_share_pct": 26.64607136481223,
+        "land_rate_pct": 3.111744053620548,
+        "building_rate_pct": 0.777936013405137,
+        "taxable_land_busd": 45.98185572066976,
+        "break_even_land_share_pct": 26.645892716072087,
         "homes": {
-          "parcels": 480003,
-          "pay_less_pct": 65.07271829551065,
-          "aggregate_change_pct": -2.3458554184511704,
-          "aggregate_change_musd": -38.5693911085875,
-          "median_change_usd": -153.25983820987926,
-          "median_current_bill_usd": 2496.9720447152276
+          "parcels": 480005,
+          "pay_less_pct": 65.05848897407319,
+          "aggregate_change_pct": -2.345993618886999,
+          "aggregate_change_musd": -38.57181338439607,
+          "median_change_usd": -153.1645427782189,
+          "median_current_bill_usd": 2496.7523788014505
         },
-        "homestead_pay_less_pct": 65.39408347282983,
+        "homestead_pay_less_pct": 65.38362349896141,
         "by_property_group": {
           "commercial/mixed/other": {
             "pay_less_pct": 34.76,
@@ -4684,7 +4684,7 @@
             "change_pct": 2.52
           },
           "homes": {
-            "pay_less_pct": 65.07,
+            "pay_less_pct": 65.06,
             "change_musd": -38.57,
             "change_pct": -2.35
           },
@@ -4702,101 +4702,101 @@
         "homes_profile": {
           "inc_q": {
             "poorest": {
-              "homes_pct": -2.0752661770346403,
-              "pay_less_pct": 69.07950205822546,
-              "median_change_usd": -85.45841582102912
+              "homes_pct": -2.0261009212479975,
+              "pay_less_pct": 68.98496473592226,
+              "median_change_usd": -84.7913093249781
             },
             "Q2": {
-              "homes_pct": -5.974717585075173,
-              "pay_less_pct": 73.13971100906403,
-              "median_change_usd": -197.54100078484927
+              "homes_pct": -5.991727208096553,
+              "pay_less_pct": 73.14624439394485,
+              "median_change_usd": -198.09335839413234
             },
             "Q3": {
-              "homes_pct": -4.579864434172465,
-              "pay_less_pct": 69.45334928229666,
-              "median_change_usd": -238.02083598106015
+              "homes_pct": -4.582591869510278,
+              "pay_less_pct": 69.45235303969184,
+              "median_change_usd": -238.14547018367267
             },
             "Q4": {
-              "homes_pct": -2.510733499314044,
-              "pay_less_pct": 59.82181296340588,
-              "median_change_usd": -174.17495841495156
+              "homes_pct": -2.5137860302390846,
+              "pay_less_pct": 59.8254006218608,
+              "median_change_usd": -174.28539969543993
             },
             "richest": {
-              "homes_pct": 1.006535567900002,
-              "pay_less_pct": 49.22109011295697,
-              "median_change_usd": 23.710832666664828
+              "homes_pct": 1.004309398868597,
+              "pay_less_pct": 49.222293062589465,
+              "median_change_usd": 23.37759123574142
             }
           },
           "min_q": {
             "whitest": {
-              "homes_pct": 0.31780359413762227,
-              "pay_less_pct": 51.56245148068025,
-              "median_change_usd": -26.885926353732657
+              "homes_pct": 0.3154477864781402,
+              "pay_less_pct": 51.55141889863235,
+              "median_change_usd": -26.946073659312788
             },
             "Q2": {
-              "homes_pct": 0.5129279542125387,
-              "pay_less_pct": 52.57150544310609,
-              "median_change_usd": -51.05019073089943
+              "homes_pct": 0.5095246046362245,
+              "pay_less_pct": 52.57667949832361,
+              "median_change_usd": -51.14902964221483
             },
             "Q3": {
-              "homes_pct": -0.478581815605883,
-              "pay_less_pct": 59.82621976389003,
-              "median_change_usd": -139.8814018646106
+              "homes_pct": -0.47886701345761784,
+              "pay_less_pct": 59.809871802811664,
+              "median_change_usd": -139.98275072725562
             },
             "Q4": {
-              "homes_pct": -10.400080765600872,
-              "pay_less_pct": 78.63178948029781,
-              "median_change_usd": -212.23448226221683
+              "homes_pct": -10.396207210341469,
+              "pay_less_pct": 78.59058153175799,
+              "median_change_usd": -212.30075337905942
             },
             "most non-white": {
-              "homes_pct": -15.404856949010826,
-              "pay_less_pct": 83.38520239592438,
-              "median_change_usd": -191.807573420067
+              "homes_pct": -15.398260010281707,
+              "pay_less_pct": 83.36262074400673,
+              "median_change_usd": -191.2463216807156
             }
           }
         },
         "spread": {
-          "inc_q": -3.0818017449346424,
-          "min_q": -15.722660543148448
+          "inc_q": -3.0304103201165944,
+          "min_q": -15.713707796759847
         },
         "opa_ratio_by_fifth": {
           "Q2": {
-            "sales": 2215,
+            "sales": 2209,
             "median_ratio": 1.1370588235294117
           },
           "Q3": {
-            "sales": 2003,
-            "median_ratio": 1.1003963360492126
+            "sales": 1993,
+            "median_ratio": 1.100810758643489
           },
           "Q4": {
-            "sales": 1905,
-            "median_ratio": 1.0624586682087713
+            "sales": 1897,
+            "median_ratio": 1.0628545564467895
           },
           "poorest": {
-            "sales": 2211,
-            "median_ratio": 1.2857142857142858
+            "sales": 2206,
+            "median_ratio": 1.287841442792482
           },
           "richest": {
-            "sales": 1917,
-            "median_ratio": 1.0488002910706424
+            "sales": 1892,
+            "median_ratio": 1.0492159900051252
           }
         },
-        "opa_tilt": 1.2258904737734153
+        "opa_tilt": 1.2274321541613098
       },
       "by_min_q": {
-        "land_rate_pct": 3.1121783544459527,
-        "building_rate_pct": 0.7780445886114882,
-        "taxable_land_busd": 45.96958920245537,
-        "break_even_land_share_pct": 26.63752268569025,
+        "land_rate_pct": 3.1121745701871326,
+        "building_rate_pct": 0.7780436425467832,
+        "taxable_land_busd": 45.96971748912212,
+        "break_even_land_share_pct": 26.63759560744825,
         "homes": {
-          "parcels": 477982,
-          "pay_less_pct": 64.9723211334318,
-          "aggregate_change_pct": -2.352732685741188,
-          "aggregate_change_musd": -38.68531775148868,
-          "median_change_usd": -134.55853051934463,
-          "median_current_bill_usd": 2461.3569126302186
+          "parcels": 477889,
+          "pay_less_pct": 64.96801558520912,
+          "aggregate_change_pct": -2.3526723559171403,
+          "aggregate_change_musd": -38.684328736784934,
+          "median_change_usd": -134.71861542509293,
+          "median_current_bill_usd": 2461.3989380834423
         },
-        "homestead_pay_less_pct": 65.68408395898621,
+        "homestead_pay_less_pct": 65.67796810843322,
         "by_property_group": {
           "commercial/mixed/other": {
             "pay_less_pct": 34.75,
@@ -4805,7 +4805,7 @@
           },
           "homes": {
             "pay_less_pct": 64.97,
-            "change_musd": -38.69,
+            "change_musd": -38.68,
             "change_pct": -2.35
           },
           "large multifamily": {
@@ -4822,92 +4822,92 @@
         "homes_profile": {
           "inc_q": {
             "poorest": {
-              "homes_pct": -4.6105582857380645,
-              "pay_less_pct": 71.40191535372257,
-              "median_change_usd": -100.89500647048908
+              "homes_pct": -4.615508813226599,
+              "pay_less_pct": 71.40419006158946,
+              "median_change_usd": -101.45469731930842
             },
             "Q2": {
-              "homes_pct": -5.815204136177332,
-              "pay_less_pct": 73.07253483517016,
-              "median_change_usd": -176.69089760319048
+              "homes_pct": -5.813018795415969,
+              "pay_less_pct": 73.08182358722955,
+              "median_change_usd": -176.67062867029654
             },
             "Q3": {
-              "homes_pct": -4.695830522586563,
-              "pay_less_pct": 69.56297150545385,
-              "median_change_usd": -198.30555160545157
+              "homes_pct": -4.692619681889232,
+              "pay_less_pct": 69.55821749107905,
+              "median_change_usd": -198.39677445663392
             },
             "Q4": {
-              "homes_pct": -2.076829683622694,
-              "pay_less_pct": 58.823458992254565,
-              "median_change_usd": -141.91616600087104
+              "homes_pct": -2.075103009621182,
+              "pay_less_pct": 58.80704947081078,
+              "median_change_usd": -142.15273148414462
             },
             "richest": {
-              "homes_pct": 0.7977387033150984,
-              "pay_less_pct": 49.54223361124144,
-              "median_change_usd": 15.18200376844743
+              "homes_pct": 0.7958181289350108,
+              "pay_less_pct": 49.538017324350335,
+              "median_change_usd": 15.097508822672353
             }
           },
           "min_q": {
             "whitest": {
-              "homes_pct": -0.7744725530247853,
-              "pay_less_pct": 53.53357621925975,
-              "median_change_usd": -71.37085771587954
+              "homes_pct": -0.7873200882659304,
+              "pay_less_pct": 53.54599652231514,
+              "median_change_usd": -71.7956237363745
             },
             "Q2": {
-              "homes_pct": -0.9713680096080757,
-              "pay_less_pct": 55.74981378796656,
-              "median_change_usd": -110.9650837178242
+              "homes_pct": -0.9542072457113804,
+              "pay_less_pct": 55.71567491517008,
+              "median_change_usd": -110.38659195159426
             },
             "Q3": {
-              "homes_pct": -0.8165571182935927,
-              "pay_less_pct": 60.83231208098617,
-              "median_change_usd": -153.23741506382476
+              "homes_pct": -0.8036711282301989,
+              "pay_less_pct": 60.81337150625116,
+              "median_change_usd": -152.83856059370737
             },
             "Q4": {
-              "homes_pct": -8.528505002447561,
-              "pay_less_pct": 77.34663865546219,
-              "median_change_usd": -174.70627585751413
+              "homes_pct": -8.547215585502876,
+              "pay_less_pct": 77.36752567576082,
+              "median_change_usd": -175.07368831023132
             },
             "most non-white": {
-              "homes_pct": -10.648735473804571,
-              "pay_less_pct": 78.16370958963753,
-              "median_change_usd": -114.67336494761122
+              "homes_pct": -10.65639800505439,
+              "pay_less_pct": 78.17595256779144,
+              "median_change_usd": -115.13129361985392
             }
           }
         },
         "spread": {
-          "inc_q": -5.408296989053163,
-          "min_q": -9.874262920779785
+          "inc_q": -5.41132694216161,
+          "min_q": -9.86907791678846
         },
         "opa_ratio_by_fifth": {
           "Q2": {
-            "sales": 2264,
-            "median_ratio": 1.0502931058851483
+            "sales": 2251,
+            "median_ratio": 1.0513828168185295
           },
           "Q3": {
-            "sales": 2533,
-            "median_ratio": 1.113401488077802
+            "sales": 2526,
+            "median_ratio": 1.114446519619532
           },
           "Q4": {
-            "sales": 2402,
-            "median_ratio": 1.2178372849084207
+            "sales": 2396,
+            "median_ratio": 1.2179542779096795
           },
           "most non-white": {
-            "sales": 2477,
-            "median_ratio": 1.3497428020791067
+            "sales": 2470,
+            "median_ratio": 1.3503018698319953
           },
           "whitest": {
-            "sales": 2259,
-            "median_ratio": 1.042305953146954
+            "sales": 2232,
+            "median_ratio": 1.042656138023343
           }
         },
-        "opa_tilt": 1.2949583546020553
+        "opa_tilt": 1.2950596276082775
       }
     },
     "error_band": {
       "basis": {
         "errors": "philly_open_avmkit/notebooks/pipeline/data/us-pa-philadelphia/out/land/fne_error_by_distance.csv (file dated 2026-09-29)",
-        "witnesses": "philly_open_avmkit/notebooks/pipeline/data/us-pa-philadelphia/out/land/witnesses.csv (file dated 2026-10-24)",
+        "witnesses": "philly_open_avmkit/notebooks/pipeline/data/us-pa-philadelphia/out/land/witnesses.csv (file dated 2026-10-25)",
         "noise_floor": "philly_open_avmkit/notebooks/pipeline/data/us-pa-philadelphia/out/land/noise_floor_measured.json (file dated 2026-09-29)",
         "distance_check": "philly_open_avmkit/notebooks/pipeline/data/us-pa-philadelphia/out/land/fne_homes_by_distance.csv (file dated 2026-09-29)",
         "model": "per parcel, log(S5 / true land) ~ Normal(log median held-out ratio, 1.4826 x MAD) of the parcel's bin of distance to the nearest witness; the witness bins are by distance to the nearest witness in the other folds, as S5 saw it when it priced that witness. Berkson form (the truth scattered around S5, which spreads land shares and shifts the centre of the draws away from the headline); independent across parcels, so a shock shared by a neighbourhood is not modelled here (held_out_equity tests that); S5's own values only, perturbed before the re-split's cap and after the relevel beyond the support edge; everything else is the headline's",
@@ -5871,15 +5871,15 @@
           "s0_opa": -80.05030923682857,
           "s2_k20": -63.76735823657441,
           "s3": -68.35575215031767,
-          "s4_kolbe": -91.28712668962217,
+          "s4_kolbe": -98.36396979622364,
           "s5": -38.776876372322086,
           "s6": -88.86414961215496,
           "e_gbm": -71.3274454110415,
           "s8": -57.23117486820626
         },
         "OPA's tilt removed from homes' totals": {
-          "by_inc_q": -38.5693911085875,
-          "by_min_q": -38.68531775148868
+          "by_inc_q": -38.57181338439607,
+          "by_min_q": -38.684328736784934
         },
         "S5's own error (5th to 95th percentile of draws)": {
           "raw p5": -48.90645753233769,
@@ -5896,7 +5896,7 @@
         "basis": "the headline, OPA relevelled on every lot beyond the edge, the pool-aware relevel, and every S5 error model's 5th to 95th percentile"
       },
       "most_negative": {
-        "musd": -91.28712668962217,
+        "musd": -98.36396979622364,
         "axis": "land surface",
         "variant": "s4_kolbe"
       },
