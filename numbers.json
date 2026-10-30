@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-27",
+  "as_of": "2026-10-30",
   "source": "philly_land_tax_research scripts/philadelphia_council_one_pager.py",
   "model": {
     "tax_year": 2026,
@@ -416,6 +416,15 @@
     "nonwhite_most_bottom": 97.48
   },
   "transition": {
+    "restored": {
+      "never_behind_pct": 33.203182918993726,
+      "behind_then_recoups_pct": 43.725596797311326,
+      "never_recoups_pct": 23.071220283694952,
+      "after_expiry_pay_less_pct": 75.98971976474077,
+      "after_expiry_median_annual_usd": -779.6231531315034,
+      "graduated_never_behind_pct": 80.34515819750719,
+      "graduated_never_behind_pct_phase_in": 43.72003835091083
+    },
     "basis": {
       "panel": "philadelphia_abatement_phase_in_value_share_rate_bare_relevelled_panel.parquet",
       "settings": {
@@ -452,6 +461,59 @@
       "median_pct": 399.9999999999999,
       "flat_schedule_pct": 94.8450551079919,
       "flat_median_usd": 5371.872479999999
+    }
+  },
+  "package": {
+    "basis": {
+      "supply": "C:\\projects\\philly-lvt-housing-starts-forecast\\out\\reports\\abatement_package.json",
+      "supply_run": "2026-10-30",
+      "phase_in_tag": "_value_share_rate_bare_relevelled",
+      "supply_rate_gap_pct": {
+        "land": 0.0,
+        "building": 0.0
+      }
+    },
+    "abated": {
+      "never_behind_pct": 33.203182918993726,
+      "behind_then_recoups_pct": 43.725596797311326,
+      "never_recoups_pct": 23.071220283694952,
+      "after_expiry_pay_less_pct": 75.98971976474077,
+      "after_expiry_median_annual_usd": -779.6231531315034,
+      "graduated_never_behind_pct": 80.34515819750719,
+      "graduated_never_behind_pct_phase_in": 43.72003835091083
+    },
+    "homes": {
+      "horizon_years": 20,
+      "net_units": 6291.484704011924,
+      "per_year": 314.5742352005962,
+      "baseline_annual_net_units": 2714.694428233002,
+      "share_of_baseline": 0.11587832204206976,
+      "calibration_years": [
+        2023,
+        2025
+      ],
+      "discount_rate_range": [
+        3041.0562015031305,
+        12207.784809124047
+      ],
+      "dispersion_span_range": [
+        4186.232129593818,
+        10522.99292448279
+      ],
+      "runner_up": 6381.96341978354,
+      "end_at_enactment": 4930.677288425844,
+      "replace_at_once": 5156.439561440378,
+      "keep_abatement_at_once": 7700.832750944888,
+      "by_start_year_first": 3713.1346231845678
+    },
+    "cost": {
+      "glide_usd": 128535905.44196697,
+      "glide_peak_usd": 11671326.737032892,
+      "glide_last_tax_year": 2045,
+      "graduated_alongside_usd": 196778927.28753665,
+      "restoration_usd": 28853262.717454936,
+      "restoration_last_tax_year": 2035,
+      "restoration_max_bill_change_pct": 0.20646636199033175
     }
   },
   "idle_land": {
