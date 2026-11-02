@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-30",
+  "as_of": "2026-11-01",
   "source": "philly_land_tax_research scripts/philadelphia_council_one_pager.py",
   "model": {
     "tax_year": 2026,
@@ -504,7 +504,10 @@
       "end_at_enactment": 4930.677288425844,
       "replace_at_once": 5156.439561440378,
       "keep_abatement_at_once": 7700.832750944888,
-      "by_start_year_first": 3713.1346231845678
+      "by_start_year_first": 3713.1346231845678,
+      "opa_rule_net_units": 4122.754775441402,
+      "land_assessment_share": 0.34470876599089195,
+      "land_assessment_alone": 313.3913091680835
     },
     "cost": {
       "glide_usd": 128535905.44196697,
